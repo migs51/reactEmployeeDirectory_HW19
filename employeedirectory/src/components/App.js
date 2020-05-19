@@ -2,6 +2,7 @@ import React from 'react';
 import Table from './Table';
 import Row from './Row';
 import SearchBar from './SearchBar';
+import Filter from './Filter';
 import API from '../api/randomEmployee';
 
 class App extends React.Component {
@@ -9,6 +10,7 @@ class App extends React.Component {
     return (
       <div className="ui container">
       <SearchBar onFormSubmit={this.onTermSubmit} />
+      <Filter />
       <div className="ui grid">
           <div className="ui row">
               <div className="sixteen wide column">
