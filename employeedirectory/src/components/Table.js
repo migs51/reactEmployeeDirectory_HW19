@@ -1,43 +1,28 @@
 import React from "react";
+import Row from './row';
+import API from '../api/randomEmployee';
 
 
-function Table(props) {
-    return (
-        <table className="ui celled table">
-            <thead>
-                <tr>
-                    <th> Name </th>
-                    <th> Title </th>
-                    <th> Age </th>
-                    <th> Email </th>
-                    <th> Department </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td data-label="Name">James</td>
-                <td data-label="Title">24</td>
-                <td data-label="Age">Engineer</td>
-                <td data-label="Email">24</td>
-                <td data-label="Department">Engineer</td>
-                </tr>
-                <tr>
-                <td data-label="Name">James</td>
-                <td data-label="Title">24</td>
-                <td data-label="Age">Engineer</td>
-                <td data-label="Email">24</td>
-                <td data-label="Department">Engineer</td>
-                </tr>
-                <tr>
-                <td data-label="Name">James</td>
-                <td data-label="Title">24</td>
-                <td data-label="Age">Engineer</td>
-                <td data-label="Email">24</td>
-                <td data-label="Department">Engineer</td>
-                </tr>
-            </tbody>
-        </table>
-    )
+class Table extends React.Component{
+    render() {
+        return (
+            <table className="ui celled table">
+                <thead>
+                    <tr>
+                        <th> First Name </th>
+                        <th> Last Name </th>
+                        <th> Title </th>
+                        <th> Email </th>
+                        <th> Department </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <Row />
+                </tbody>
+            </table>
+        )
+    }
+
 };
 
 export default Table;
