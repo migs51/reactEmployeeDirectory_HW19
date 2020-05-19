@@ -4,6 +4,24 @@ import API from '../api/randomEmployee';
 
 
 class Table extends React.Component{
+    state = {
+        result: {},
+        search: ''
+    };
+
+    componentDidMount() {
+        API.search()
+          .then(res => console.log ({ result: res.data }))
+          .catch(err => console.log(err));
+      }
+    
+    //   showEmployees = query => {
+    //     API.search(query)
+    //       .then(res => this.setState({ result: res.data }))
+    //       .catch(err => console.log(err));
+    //   };
+
+
     render() {
         return (
             <table className="ui celled table">
