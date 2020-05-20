@@ -1,10 +1,13 @@
 import React from 'react';
 
-function filter () {
+
+
+
+function filter ({isMale}) {
     return (
         <div><h4>Filter By: </h4>
-            <button class="ui primary basic button">Gender: Male</button>
-            <button class="ui primary basic button">Gender: Female</button>
+            <button onClick={isMale} className="ui primary basic button">Gender: Male</button>
+            <button className="ui primary basic button">Gender: Female</button>
         </div>
     );
 }
