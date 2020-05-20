@@ -2,7 +2,10 @@ import React from 'react';
 
 function filter () {
     return (
-        <div>Filter by: </div>
+        <div><h4>Filter by: </h4>
+            <button class="ui primary basic button">Gender: Male</button>
+            <button class="ui primary basic button">Gender: Female</button>
+        </div>
     );
 }
 
