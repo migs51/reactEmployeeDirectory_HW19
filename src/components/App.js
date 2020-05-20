@@ -43,7 +43,7 @@ class App extends React.Component {
     return (
       <div className="ui container">
       <SearchBar onFormSubmit={this.onTermSubmit} />
-      <Filter isMale={filterMale}  />
+      <Filter  />
       <div className="ui grid">
           <div className="ui row">
               <div className="sixteen wide column">
