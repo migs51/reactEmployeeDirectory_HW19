@@ -1,15 +1,17 @@
 import React from 'react';
 
 
-function Row(props) {
+const Row = ({employee}) =>  {
     return (
+ 
         <tr>
-            <td data-label="firstName">{props.firstName}</td>
-            <td data-label="lastName">Smith</td> 
-            <td data-label="Title">Engineer</td>
-            <td data-label="Email">jsmith@abc.com</td>
-            <td data-label="Department">Engineering</td>
+            <td data-label="First Name">{employee.name.first}</td>
+            <td data-label="Last Name">{employee.name.last}</td> 
+            <td data-label="Title">{employee.gender}</td>
+            <td data-label="Email">{employee.email}</td>
+            <td data-label="Department">{employee.dob.age}</td>
         </tr>
+
     )
   
 }
